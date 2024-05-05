@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kian's Sweet Republic</title>
+<style>
+  body {
+    background-color: #FDF5E6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header, footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .welcome {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  .product {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    vertical-align: top;
+  }
+  .product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .product h3 {
+    margin-top: 10px;
+  }
+  .link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #8B4513;
+  }
+  .navbar a {
+    color: #F5DEB3; 
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .about-section {
+    margin-top: 80px; 
+    padding: 20px;
+    background-color: #FFF8DC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .home-section {
+    margin-top: 80px; 
+    padding: 20px;
+    background-color: #FFF8DC; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: white;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="https://i.ibb.co/18KRS4Q/FB-IMG-1712554220947.jpg" alt="Kian's Sweet Republic Logo" width="125" height="125">
+  </div>
+  <div class="welcome">
+    <h1>Welcome to Kian's Sweet Republic!</h1>
+  </div>
+</header>
+<div class="container">
+  <div class="product">
+    <img src="https://i.ibb.co/G3LbckL/Messenger-creation-3d35d746-9d4e-492b-92f5-43ed64863afb.jpg" alt="Casava" onclick="showImage(this.src)">
+    <h3>Casava</h3>
+    <p>₱140</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/tmNPByq/Messenger-creation-f3f7d440-b5a9-4e3c-ad02-98314b1dc4a8.jpg" alt="Inutak" onclick="showImage(this.src)">
+    <h3>Inutak</h3>
+    <p>₱140</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/dWz1MgC/Messenger-creation-81bd56ff-d3d9-4d9c-8391-fd908525721a.jpg" alt="Kalamay" onclick="showImage(this.src)">
+    <h3>Kalamay</h3>
+    <p>₱130</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/RT0qf3F/Messenger-creation-ac0cddaf-db0c-4e95-9dde-a261174de869.jpg" alt="Bibinkang Kanin" onclick="showImage(this.src)">
+    <h3>Bibinkang Kanin</h3>
+    <p>₱140</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/74d9K0m/Messenger-creation-c59cec46-efea-4007-ba2e-05b978209090.jpg" alt="Leche Flan" onclick="showImage(this.src)">
+    <h3>Leche Flan</h3>
+    <p>₱130</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/cCPjW1f/Messenger-creation-305523f0-961d-4728-8ffa-62424a5d90d3.jpg" alt="Pure Ube Halaya" onclick="showImage(this.src)">
+    <h3>Pure Ube Halaya</h3>
+    <p>₱150</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/GxV7hfC/Messenger-creation-93947796-0796-4c35-908e-ea5fe466be87.jpg" alt="Palitaw" onclick="showImage(this.src)">
+    <h3>Palitaw</h3>
+    <p>₱100</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/fDzLXBp/Messenger-creation-0e41281a-3c9e-40b0-8996-51d90f348d67.jpg" alt="Putong Puti" onclick="showImage(this.src)">
+    <h3>Putong Puti</h3>
+    <p>₱180</p>
+  </div>
+  <div class="product">
+    <img src="https://i.ibb.co/9YzSx94/Messenger-creation-243182d5-11cb-4e2e-aa86-7e40e0c30d0d.jpg" alt="Kutsinta" onclick="showImage(this.src)">
+    <h3>Kutsinta</h3>
+    <p>₱160</p>
+  </div>
+<footer>
+  <div class="link">
+    <a href="https://www.facebook.com/antonette.mendoza.1800?mibextid=ZbWKwL" target="_blank">
+      <img src="https://i.ibb.co/TtBM2zw/1000039413-removebg-preview.png" alt="Facebook" width="50" height="50">
+    </a>
+  </div>
+</footer>
+<div class="navbar">
+  <a href="#">Home</a> | <a href="#about">About</a>
+</div>
+
+<div id="about" class="about-section">
+  <h2>About Kian's Sweet Republic</h2>
+  <p>Kian's Sweet Republic is a business  that specializes in desserts. Our desserts ensures that each treat is made with love and authenticity.</p>
+  <p>From our delicious cassava cake to our mouthwatering leche flan, we take pride in offering the finest sweets that capture the essence of desserts!</p>
+  <p>Visit us today to experience the flavors of Kian's Sweet Republic!</p>
+</div>
+
+<script>
+function showImage(src) {
+  var modal = document.createElement('div');
+  modal.style.position = 'fixed';
+  modal.style.top = '0';
+  modal.style.left = '0';
+  modal.style.width = '100%';
+  modal.style.height = '100%';
+  modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.onclick = function() { modal.remove(); };
+  
+  var img = document.createElement('img');
+  img.src = src;
+  img.style.maxWidth = '90%';
+  img.style.maxHeight = '90%';
+  modal.appendChild(img);
+  document.body.appendChild(modal);
+}
+</script>
+</body>
+</html>
